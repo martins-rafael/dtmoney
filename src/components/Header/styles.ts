@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-  background-color: var(--blue);
+  background-color: var(--gray-dark);
 `;
 
 export const Content = styled.div`
@@ -17,7 +17,7 @@ export const Content = styled.div`
     height: 3rem;
     font-size: 1rem;
     color: #ffffff;
-    background: var(--blue-light);
+    background: var(--gray-light);
     border: 0;
     border-radius: 0.25rem;
     transition: filter 0.2s ease-in-out;
