@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="../../.github/ignite.png" alt="Ignite" >
+  <img src="../.github/ignite.png" alt="Ignite" >
   <br><br>
 Fundamentos do ReactJS
 </h1>
@@ -16,3 +16,8 @@ Nesse módulo construímos uma aplicação front-end web completa utilizando con
 - Consumindo API
 - Modal & Forms
 - Contexto e Hooks
+
+### Instalação e uso
+
+- rode `yarn install` para instalar as dependências.
+- rode `yarn start` para iniciar o projeto.
