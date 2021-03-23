@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
 
+interface RadioBoxProps {
+  isActive: boolean;
+}
+
 export const Container = styled.form`
   h2 {
     margin-bottom: 2rem;
@@ -51,31 +55,31 @@ export const TransactionTypeContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
   margin: 1rem 0;
+`;
 
-  button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4rem;
-    background: transparent;
-    border: 1px solid #d7d7d7;
-    border-radius: 0.25rem;
-    transition: border-color 0.2s ease-in-out;
+export const RadioBox = styled.button<RadioBoxProps>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  background: ${({ isActive }) => isActive ? '#ddd' : 'transparent'};
+  border: 1px solid #d7d7d7;
+  border-radius: 0.25rem;
+  transition: border-color 0.2s ease-in-out;
 
-    &:hover {
-      border-color: ${darken(0.1, '#d7d7d7')};
-    }
+  &:hover {
+    border-color: ${darken(0.1, '#d7d7d7')};
+  }
 
-    img {
-      width: 20px;
-      height: 20px;
-    }
+  img {
+    width: 20px;
+    height: 20px;
+  }
 
-    span {
-      display: block;
-      margin-left: 1rem;
-      font-size: 1rem;
-      color: var(--text-title);
-    }
+  span {
+    display: block;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: var(--text-title);
   }
 `;
