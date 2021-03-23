@@ -8,8 +8,8 @@ export const Summary = () => (
   <Container>
     <div>
       <header>
-        <p>Entrada</p>
-        <img src={outcomeImg} alt="Saídas"/>
+        <p>Entradas</p>
+        <img src={incomeImg} alt="Entradas"/>
       </header>
       <strong>R$1000,00</strong>
     </div>
@@ -17,7 +17,7 @@ export const Summary = () => (
     <div>
       <header>
         <p>Saídas</p>
-        <img src={incomeImg} alt="Entradas"/>
+        <img src={outcomeImg} alt="Saídas"/>
       </header>
       <strong>- R$300,00</strong>
     </div>
