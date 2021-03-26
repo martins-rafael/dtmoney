@@ -1,5 +1,6 @@
 import { FormEvent, useState } from 'react';
 import Modal from 'react-modal';
+import { api } from '../../services/api';
 
 import closeImg from '../../assets/close.svg';
 import incomeImg from '../../assets/income.svg';
@@ -23,7 +24,8 @@ export const NewTransactionModal = ({
 
   function handleCreateNewTransaction(event: FormEvent) {
     event.preventDefault();
-    console.log({ type, title, amount, category });
+    const data = { type, title, amount, category };
+    api.post('/transactions', data);
   }
 
   return (
